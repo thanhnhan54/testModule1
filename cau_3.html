@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = prompt('nhập chuỗi:')
+        function count(str){
+            let string = 'AOEUIaoeui'
+            let count = 0;
+            let find = false;
+            for (let i = 0; i < str.length; i++){
+                if(string.indexOf(str[i]) != -1){
+                    find = true;
+                    count ++;
+                }
+            }
+            if(find == false){
+                return false;
+            }
+            return count
+        } 
+
+        alert(count(str))
+        </script>
+</body>
+</html>
